@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form with RxJS</title>
+    </head>
+    <body>
+        <h1>Welcome to my first form in RxJS!</h1>
+        <p>Let's start</p>
+
+        <div style="margin-top: 20px;">
+            <form>
+                <label for="searchInput">Search for something:</label>
+                <input type="text" id="searchInput" placeholder="Type here to search">
+                <label for="selectType">Select a type</label>
+                <select id="selectType">
+                    <option value="">Select an option</option>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                </select>
+                <input type="checkbox" id="checkbox"><label for="checkbox">Check me</label>
+            </form>
+        </div>
+        <div>
+            <p>Form result:</p>
+            <div id="searchInput_result">I'm empty!</div>
+            <div id="selectType_result">Mee too!</div>
+            <div id="checkbox_result">Undefined checkbox</div>
+        </div>
+        <script type="text/javascript" src="bundle.js"></script>
+    </body>
+</html>
